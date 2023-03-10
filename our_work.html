@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">"
+    -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Our Work</title>
+</head>
+
+<body class="ourwork-body">
+    <section class="header-ourwork">
+        <nav>
+            <a href="index.html"><img src="logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="our_work.html">OUR WORK</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onClick="showMenu()"></i>
+        </nav>
+
+        <br>
+        <br>
+        <br>
+        <div class="ourwork-textbox">
+            <h1 class="ourwork-textbox">Our Work</h1>
+        </div>
+
+    </section>
+
+    <section class="pictures">
+
+        <div class="row-pictures">
+            <div class="picture-col">
+                <img class="ourwork-image" src="retaining_wall.jpeg">
+                <h3>Picture 1</h3>
+                <p>This is a description for the picture.</p>
+            </div>
+            <div class="picture-col">
+                <img class="ourwork-image" src="awesome_square.jpeg">
+                <h3>Picture 2</h3>
+                <p>This is a description for the picture.</p>
+            </div>
+            <div class="picture-col">
+                <img class="ourwork-image" src="front_yard.jpeg">
+                <h3>Picture 3</h3>
+                <p>This is a description for the picture.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <h4>Website created by Ethan Cronin</h4>
+        <div class="icons">
+            <p><i class="fa fa-phone"></i> (423) 736-9919</p>
+            <i class="fa fa-facebook"></i>
+        </div>
+    </section>
+
+    <!---- JavaScript for menu toggling -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0" // edits the right value from css
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-250px";
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
